@@ -1,8 +1,8 @@
-font-family: 'Syne Mono', monospace;
-
-
 header{
     background-color: #E9C46A;
+    font-family: 'Syne Mono', monospace;
+    font-size: 100px;
+    text-align: center;
 }
 
 .grid-flex{
@@ -18,7 +18,8 @@ aside{
 button{
     background-color: #264653;
     color: honeydew;
-    font-size: 18px;
+    font-size: 28px;
+    font-family: 'Secular One', sans-serif;
 
 }
 
@@ -32,5 +33,5 @@ body{
 }
 
 .voting-photos img{
-    
+
 }
