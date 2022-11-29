@@ -1,1 +1,36 @@
 font-family: 'Syne Mono', monospace;
+
+
+header{
+    background-color: #E9C46A;
+}
+
+.grid-flex{
+    background-color: ;
+    height: 1400px;
+}
+
+aside{
+    background-color: #F4A261;
+
+}
+
+button{
+    background-color: #264653;
+    color: honeydew;
+    font-size: 18px;
+
+}
+
+body{
+    background-color: #2A9D8F;
+}
+
+.voting-photos{
+    display: flex;
+    
+}
+
+.voting-photos img{
+    
+}
