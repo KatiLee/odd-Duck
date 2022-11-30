@@ -53,4 +53,33 @@ function renderProducts(){
   Products.votingArray[productTwo].views++;
   Products.votingArray[productThree].views++;
 }
+//Is there a missing closing curly bracket?
+function handleProductsClick(event){
+  console.log('welcome to the click', event);
+  if(event.target === productProfile){
+    alert('Common, help us out, which one is the coolest?');
+  }
+  clicks++;
+  let clickProducts = event.target.alt;
+  console.log(clickProducts);
+  for(let i = 0; i < Products.votingArray.length; i++){
+    if(clickProducts === Products.votingArray[i].name){
+        Products.votingArray[i].click++;
+        break;
+  }
+}
 
+if(clicks === maxClicks){
+    productProfile.removeEventListener('click', handleProductsClick);
+    whichOneWon.addEventListener('click', renderResults);
+} else {
+    renderProducts();
+}
+//Why does she have so many more closing brackets? It's not throwing a flag?
+
+function renderResults(){
+    let ul = document.querySelector('ul');
+    for(let i = 0; i < Products.votingArray.length; i++){
+        let li = document.createElement('li');
+    }
+}
