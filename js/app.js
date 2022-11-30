@@ -81,5 +81,31 @@ function renderResults(){
     let ul = document.querySelector('ul');
     for(let i = 0; i < Products.votingArray.length; i++){
         let li = document.createElement('li');
+        li.textContent = '${Products.votingArray[i].name} had ${Products.votingArray[i]views} views and was clicked on ${Products.votingArray[i].click} times';
+        ul.appendChild(li);
     }
 }
+
+new Products('Star Wars Luggage', '/images/bag/jpg');
+new Products('Banana Slicer', 'image/banana.jpg');
+new Products('The Ultimate TP Stand', 'images/bathroom.jpg');
+new Products('Toe Splashing Boots', 'images/boots.jpg');
+new Products('The Breakfast Making Machine', 'images/breakfast.jpg');
+new Products('Meatball Bubble Gum', 'image/bubblegum.jpg');
+new Products('Odd Duck Chair', 'image/chair.jpg');
+new Products('Action Cthulhu', 'images/cthulhu.jpg');
+new Products('Odd Duck Dog', 'images/dog-duck.jpg');
+new Products('Canned Dragon Meat', 'images/dragon.jpg');
+new Products('Writing and Eating Utensils', 'images/pen.jpg');
+new Products('Doggie Dusters', 'images/pet-sweep.jpg');
+new Products('Slice Scissors', 'images/scissors.jpg');
+new Products('The Shark Sack', 'images/shark.jpg');
+new Products('Swaddle Sweeper', 'images/sweep.png');
+new Products('Tauntaun Bedroll', 'images/tauntaun.jpg');
+new Products('Unicorn Spam', 'images/unicorn.jpg');
+new Products('Infinity Watering Can', 'images/water-can.jpg');
+new Products('Sommelier\'s Sniff\(t\)er', 'images/wine-glass.jpg');
+
+renderProducts();
+
+productProfile.addEventListener('click', )
