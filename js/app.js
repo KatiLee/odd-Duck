@@ -72,8 +72,10 @@ function handleProductsClick(event){
   if(clicks === maxClicks){
     productProfile.removeEventListener('click', handleProductsClick);
     whichOneWon.addEventListener('click', renderResults);
+    productProfile.className = 'no-voting';
   } else {
     renderProducts();
+    console.log('maybe this?', renderProducts);
   }
 }
 
@@ -81,7 +83,7 @@ function renderResults(){
   let ul = document.querySelector('ul');
   for(let i = 0; i < Products.votingArray.length; i++){
     let li = document.createElement('li');
-    li.textContent = '${Products.votingArray[i].name} had ${Products.votingArray[i]views} views and was clicked on ${Products.votingArray[i].click} times';
+    li.textContent = `${Products.votingArray[i].name} had ${Products.votingArray[i].views} views and was clicked on ${Products.votingArray[i].click} times`;
     ul.appendChild(li);
   }
 }
