@@ -1,0 +1,48 @@
+header{
+    background-color: #E9C46A;
+    font-family: 'Syne Mono', monospace;
+    font-size: 100px;
+    text-align: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.grid-flex{
+    background-color: rosybrown;
+    height: 1400px;
+}
+
+aside{
+    background-color: #F4A261;
+
+}
+
+button{
+    background-color: #264653;
+    color: honeydew;
+    font-size: 28px;
+    font-family: 'Secular One', sans-serif;
+
+}
+
+body{
+    background-color: #2A9D8F;
+}
+
+.voting-photos{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.voting-photos img{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    width: 250px;
+
+}
